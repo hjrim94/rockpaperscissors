@@ -32,6 +32,16 @@ function game() {
         playRound(playerSelection, computerSelection);
     };
 
+    if (numOfWins > numOfLosses && numOfTies) {
+        console.log(`You won the most number of games (${numOfWins})!`);
+    } else if (numOfLosses > numOfWins && numOfTies) {
+        console.log(`You lost the most number of games (${numOfLosses})!`);
+    } else if (numOfTies > numOfWins && numOfLosses) {
+        console.log(`You tied the most number of games (${numOfTies})!`);
+    } else (console.log('Try again!'))
+    
+    
+
 }
 
 game()
